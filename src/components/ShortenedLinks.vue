@@ -1,33 +1,31 @@
-<script setup>
-import { ref } from 'vue';
-
-let copied = ref(false);
-
-const props = defineProps({
-    inputText: {
-        type: String,
-        required: true,
+<script>
+export default {
+    props: {
+        inputText: String,
+        shortenUrl: String,
     },
-    shortenUrl: {
-        type: String,
-        required: true,
+
+    data() {
+        return {
+            copied: false,
+        };
     },
-});
 
-const url = ref(props.shortenUrl);
-
-async function copyToClipboard() {
-    if (navigator.clipboard) {
-        navigator.clipboard.writeText(url.value).then(() => {
-            copied.value = true;
-            setTimeout(() => {
-                copied.value = false;
-            }, 2000);
-        });
-    } else {
-        alert('Browser Not compatible');
-    }
-}
+    methods: {
+        async copyToClipboard() {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(this.shortenUrl).then(() => {
+                    this.copied = true;
+                    setTimeout(() => {
+                        this.copied = false;
+                    }, 2000);
+                });
+            } else {
+                alert('Browser Not compatible');
+            }
+        },
+    },
+};
 </script>
 
 <template>
