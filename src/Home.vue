@@ -77,7 +77,7 @@ export default {
 </script>
 
 <template>
-    <div class="h-screen w-full overflow-x-hidden font-poppins">
+    <div class="h-full w-full overflow-x-hidden font-poppins">
         <div class="relative mx-6 sm:mx-12 md:mx-16 lg:mx-24 xl:mx-48">
             <div class="flex flex-row items-center justify-between py-10 lg:py-12 lg:px-3">
                 <div class="flex flex-row items-center space-x-8">
