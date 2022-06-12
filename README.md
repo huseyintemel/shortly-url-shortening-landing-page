@@ -26,3 +26,13 @@ npm run build
 - [Vite](https://vitejs.dev/)
 - [VueJS](https://vuejs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
+
+### Links
+
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-url-shortening-api-landing-page-with-vuejs-and-tailwindcss-p4yQVR_Ck7](https://www.frontendmentor.io/solutions/responsive-url-shortening-api-landing-page-with-vuejs-and-tailwindcss-p4yQVR_Ck7)
+- Live Site URL: [https://url-shortening-api-landing-page-huseyintemel.netlify.app/](https://url-shortening-api-landing-page-huseyintemel.netlify.app/)
+
+
+## Author
+
+- Frontend Mentor - [@huseyintemel](https://www.frontendmentor.io/profile/huseyintemel)
